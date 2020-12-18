@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+/* Swiper */
+
+.swiper-container {
+	width: 100%;
+	height: 600px;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.main-slide1 {
+    background-image: url(/images/sink-far.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+    border-radius: 0px !important;
+    width: 5px !important;
+    height: 22px !important;
+    text-align: center;
+    line-height: 30px;
+    background: none !important;
+    border: 2px solid #f7742e!important;
+	
+}
+.swiper-pagination-bullet-active {
+	color: black;
+    border: 2px solid #fff !important;
+}
+
+:root {
+    --swiper-theme-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Navigation */
+.navigation-bar {
+    position: absolute;
+    background-color: rgba(0, 0, 200, 0.4);
+    z-index: 10;
+}
+
+/* End of Navigation */
