@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <nav class="navigation-bar container-fluid content-center">
+      <nav class="navigation-bar container-fluid content-center" id="navbar">
         <div class="row text-center d-flex align-items-center">
           <div class="col-lg-4 brand-logo">
             <svg
@@ -27,6 +27,8 @@
               width="241"
               height="129"
               viewBox="0 0 241 129"
+              id="logo"
+              type="button"
             >
               <image
                 id="Vektor-Smartobjekt"
@@ -36,9 +38,9 @@
               />
             </svg>
           </div>
-          <div class="col-lg-4 nav-links">
-            <a href="1.html">ÜBER UNS</a> | <a href="2.html">LEISTUNGEN</a> |
-            <a href="3.html">REFERENZEN</a> | <a href="4.html">KONTAKT</a>
+          <div class="col-lg-4 nav-links" id="navigation-links">
+            <a href="about-us.html">ÜBER UNS</a> | <a href="services.html">LEISTUNGEN</a> |
+            <a href="referenzen.html">REFERENZEN</a> | <a href="contact.html">KONTAKT</a>
           </div>
           <div class="col-lg-4 contact-phone">
             <svg
@@ -55,7 +57,7 @@
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAcCAYAAABsxO8nAAAA9klEQVQ4je3VsStGYRTH8c993VhELCx2qzIgJYMsymoiA6tZCqud8l9I8UcoG3+BTTYDKbw6Ooq6t9yX8f7q9Jye8/TtnGc4v+JibQK2sYshzfSKM+yUWMUp9nHVEDSGYzwEaAUF1rGR+W/1hmAslznODQ4aQkLdgGC+TOJ9ztqLRrHYSWpfj5DQQDA6fwD8UAtqQS2oBf0DqEg36FXPwSgzmcZRDaibUdf9VDDKdIIwgLmah++5iuOsModxPH65yDWWakCHsdyxUFPfxF60G6Y4i0n0V0R08oTBitpIeuFtdHSCGVziLv/ju17y7rxitOHPidj6AGdqKrcDYHMOAAAAAElFTkSuQmCC"
               />
             </svg>
-            <a href="tel: 01716850387">0171 - 68-50-387</a>
+            <a href="tel: 01716850387" id="tel-number">0171 - 68-50-387</a>
           </div>
         </div>
       </nav>
@@ -67,9 +69,9 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide main-slide1"></div>
-          <div class="swiper-slide main-slide2">Slide 2</div>
-          <div class="swiper-slide main-slide3">Slide 3</div>
-          <div class="swiper-slide main-slide4">Slide 4</div>
+          <div class="swiper-slide main-slide2"></div>
+          <div class="swiper-slide main-slide3"></div>
+          <div class="swiper-slide main-slide4"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -80,13 +82,13 @@
         <p>Trockenbau</p>
         <p>Restauration</p>
         <p>Dachdeckerarbeiten</p>
-        <p class="mehr-infos">mehr Infos <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+        <a href="#" class="mehr-infos">mehr Infos <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
           <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-        </svg></p>
+        </svg></a>
       </div>
       <div class="col-lg-12 under-banner">
-        <h3 class="text-center my-4" style="color: #6d573a">
+        <h3 class="text-center my-4">
           Willkommen bei der Zimmerei Blohm
         </h3>
         <p class="text-center" style="color: #727371">
@@ -103,7 +105,7 @@
           Restauration zu unseren Fachge-<br />bieten. Ob individuelle Bauten,
           Terrassenüberdachungen oder Carports: meine Mitarbeiter und ich
           erfüllen<br />
-          Ihre Holzbauwünsche. Nehmen Sie <a href="#">Kontakt</a>
+          Ihre Holzbauwünsche. Nehmen Sie <a href="#" style="color: #b4581d; text-decoration: none;">Kontakt</a>
           zu uns auf - gemeinsam entwickeln wir Ihr neues Projekt!
         </p>
       </div>
@@ -117,6 +119,7 @@
           fill="currentColor"
           class="bi bi-chevron-up"
           viewBox="0 0 16 16"
+          id="back-to-top"
         >
           <path
             fill-rule="evenodd"
