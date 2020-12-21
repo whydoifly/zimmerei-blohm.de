@@ -337,6 +337,7 @@ img.hover-shadow {
   width: 100%;
   background: #fff;
   overflow: hidden;
+  display: none;
 }
 .column-box .column {
   width: 20%;
@@ -446,6 +447,7 @@ img.hover-shadow {
   background-color: #fff;
   padding: 6px 16px;
   color: black;
+  margin-top: 10px;
 }
 
 /* The Close Button */
