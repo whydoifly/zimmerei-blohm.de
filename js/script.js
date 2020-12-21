@@ -128,7 +128,7 @@ function openModal() {
   columnWidth = columns[0].offsetWidth;
   showAndClose();
   numberText.forEach((el, id) => {
-    el.innerHTML = `${id + 1} von ${numberText.length}`
+    el.innerHTML = `${id + 1} / ${numberText.length}`
   })
 }
 
