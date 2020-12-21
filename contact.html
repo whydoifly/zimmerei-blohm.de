@@ -199,23 +199,6 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     >
-    //E-mail Ajax Send
-    $("form").submit(function () {
-        //Change
-        var th = $(this);
-        $.ajax({
-          type: "POST",
-          url: "mail.php", //Change
-          data: th.serialize(),
-        }).done(function () {
-          alert("Спасибо!");
-          setTimeout(function () {
-            // Done Functions
-            th.trigger("reset");
-          }, 1000);
-        });
-        return false;
-      });
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
