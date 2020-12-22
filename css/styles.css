@@ -173,6 +173,8 @@ h3 {
   color: #727371;
   font-size: 19px;
   transition-duration: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .contact-phone a {

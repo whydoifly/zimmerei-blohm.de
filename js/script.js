@@ -30,15 +30,15 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "5px 0 5px 0";
     document.getElementById("logo").style.width = "140px";
-    document.getElementById("navbar").style.height = "110px";
-    document.getElementById("Icon_Fon").style.height = "20px";
+    document.getElementById("navbar").style.height = "120px";
+    document.getElementById("Icon_Fon").style.height = "22px";
     document.getElementById("tel-number").style.fontSize = "20px";
   } else {
     document.getElementById("navbar").style.padding = "15px 0 15px 0";
     document.getElementById("logo").style.width = "241px";
     document.getElementById("navbar").style.height = "160px";
     document.getElementById("Icon_Fon").style.height = "24px";
-    document.getElementById("tel-number").style.fontSize = "24px";
+    document.getElementById("tel-number").style.fontSize = "16px";
   }
 }
 
