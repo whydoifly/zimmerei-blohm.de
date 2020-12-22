@@ -151,6 +151,26 @@ h3 {
   color: #d85f1d;
 }
 
+.email-link {
+  color: #727371;
+  transition: 0.3s;
+}
+
+.email-link:hover,
+.email-link-footer:hover {
+  color: #cc6633;
+}
+
+.email-link-footer,
+.link-footer {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.link-footer:hover {
+  color: black;
+}
+
 /* Navigation */
 #navbar,
 #logo {
@@ -304,9 +324,6 @@ textarea {
 }
 
 /* Image Gallery */
-img.hover-shadow {
-  transition: all 0.3s;
-}
 
 .carousel-row {
   max-width: 80%;
@@ -322,7 +339,7 @@ img.hover-shadow {
 .carousel-row--img {
   width: 30%;
   margin-bottom: 40px;
-  display: block;
+  position: relative;
 }
 
 .carousel-row--img img {
@@ -831,6 +848,17 @@ figure.effect-julia {
 	background: rgba(180,88,29, 1);
 }
 
+.figure-headings {
+  text-transform: capitalize; 
+  background-color: rgba(180,88,29, 0.8); 
+  padding: 15px;
+  transition: 0.3s;
+}
+
+figure.effect-julia:hover .figure-headings {
+  background-color: transparent;
+}
+
 figure.effect-julia img {
 	max-width: none;
 	height: 400px;
@@ -910,4 +938,42 @@ figure.effect-julia:hover p {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 10px;
+}
+
+/* Referenzen Image Hover */
+
+.hover-shadow {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.referenzen-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(201, 97, 33, 0.7);
+}
+
+.referenzen-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-row--img:hover .referenzen-overlay {
+  opacity: 1;
 }
