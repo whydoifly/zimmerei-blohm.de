@@ -134,6 +134,7 @@ h3 {
   right: 10%;
   font-size: 23px;
   padding: 25px 105px;
+  font-family: "Roboto Slab", serif;
 }
 
 .mehr-infos {
@@ -735,6 +736,20 @@ textarea {
 
   .privacy-policy {
     margin-left: 17px;
+  }
+}
+
+@media screen and (Max-width: 992px) {
+  .contact-phone {
+    display: none;
+  }
+
+  #navigation-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 }
 

@@ -107,6 +107,9 @@
       </div>
     </main>
     <!-- Img on which you want to trigger carousel -->
+    <ul class="carousel-row">
+        <?php include 'dsg.php'; ?>
+    </ul>
     <div class="carousel-row">
       <div class="carousel-row--img"> 
         <img src="./images/Referenzen_1.jpg" /> 
